@@ -1,0 +1,26 @@
+name: "Private Label Feed"
+version: 0.1
+id: PrivateLabelFeed
+key: PrivateLabelFeed
+author_name: Endevver, LLC
+author_link: http://endevver.com/
+static_version: 0
+description: "Setup a local redirect to a third party feed server."
+
+callbacks:
+    build_file: $PrivateLabelFeed::PrivateLabelFeed::Plugin::callback_build_file
+
+options:
+    fieldsets:
+        feedburner:
+            label: 'Feedburner Settings'
+    feedburner_feed_url:
+        type: text
+        label: "Feedburner Feed URL"
+        hint: "The URL of your feedburner feed."
+        tag: FeedburnerFeedURL
+        fieldset: feedburner
+        order: 1
+        republish: main_index
+        default: ''
+        scope: blog
