@@ -37,7 +37,7 @@ Installation follows the [standard plugin installation](http://tinyurl.com/easy-
 
 Now, if Feedburner (or your feed proxy of choice) ever goes away, you can simply disable the plugin and remove the Apache rewrite, and your site goes back to serving it's own `atom.xml` file, without any disruption to your users.
 
-### <a id="author">Author</a> ###
+## <a id="author">Author</a> ###
 
 This plugin was originally created by Steve Ivy of [Wallrazer](http://wallrazer.com) for [Endevver, LLC](http://endevver.com).
 
