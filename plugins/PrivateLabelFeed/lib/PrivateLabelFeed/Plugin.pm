@@ -15,7 +15,7 @@ sub callback_build_file {
     MT->log("template identifier: ".$template->identifier);
     MT->log("build_file got file: $file");
 
-    if ($template->identifier == 'feed_recent') {
+    if ($template->identifier eq 'feed_recent') {
         my $blog = $args{blog};
         my $blog_id = $blog->id;
         my $scope = "blog:" . $blog->id;
